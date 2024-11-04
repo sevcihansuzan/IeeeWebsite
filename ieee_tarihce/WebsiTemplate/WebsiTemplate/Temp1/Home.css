@@ -1,0 +1,156 @@
+/* .mask-custom sınıfı arka plan bulanıklığı ve renk ayarları için */
+.mask-custom {
+    backdrop-filter: blur(5px);
+    /* Bulanıklaştırma efekti */
+    background-color: rgba(255, 255, 255, .15);
+    /* Şeffaf arka plan rengi */
+}
+
+/* Logo pozisyonlandırması için */
+.position-logo {
+    display: flex;
+    justify-content: center;
+    /* Logoyu yatayda ortalamak için */
+    align-items: center;
+    /* Logoyu dikeyde ortalamak için */
+    margin-bottom: 20px;
+    /* Logonun altına boşluk bırakmak için */
+}
+
+/* Navbar (menü) içindeki öğeleri ortalamak için */
+.collapse.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    /* Menü öğelerini yatayda ortalamak için */
+}
+
+/* Container ayarları */
+.container {
+    display: flex;
+    /* flex-direction: column; Logoyu ve menüyü alt alta sıralamak için (gerektiğinde açılabilir) */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* Ortalamak için otomatik marjin */
+    padding: 10px 0;
+    /* Üst ve alt boşluk */
+}
+
+/* Navbar menüsü için ayarlar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    /* Menü öğelerini ortalamak için */
+}
+
+/* Her bir menü öğesi için ayar */
+.nav-item {
+    display: flex;
+    align-items: center;
+    /* Menü öğesini ortalamak için */
+}
+
+/* Dil değiştirme öğesi için özel konum ayarı */
+#language {
+    display: flex;
+    margin-left: auto !important;
+    /* Dil öğesini en sağa hizalamak için */
+}
+
+/* Menüdeki bağlantılar için stiller */
+.nav-link {
+    margin: 0 10px;
+    /* Menü öğeleri arasında boşluk bırakmak için */
+    position: relative;
+    /* Önceki ve sonraki efektler için konumlandırma */
+    margin: 0 8px;
+    /* Kenar boşlukları */
+    line-height: 80px;
+    /* Satır yüksekliği */
+    color: #333;
+    /* Varsayılan renk */
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+    transition: color 0.3s ease;
+    /* Renk değişimi geçiş süresi */
+}
+
+/* Alt çizgi efekti için pseudo-element */
+.nav-link::before {
+    content: '';
+    /* Pseudo-element boş içerik */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    /* Alt çizgi kalınlığı */
+    background-color: #16639d;
+    /* Çizgi rengi */
+    transition: transform 300ms ease-in-out;
+    /* Çizginin açılma animasyonu */
+    transform: scaleX(0);
+    /* Çizgi başlangıç durumu (kapalı) */
+    transform-origin: left;
+    /* Animasyon sol tarafa göre başlar */
+    /* border-radius: 100px;  BURAYA BAK*/
+}
+
+/* Bağlantı üzerine gelindiğinde alt çizginin açılması */
+.nav-link:hover::before,
+.nav-link:focus::before {
+    transform: scaleX(1);
+    /* Çizgiyi tam genişlikte göster */
+}
+
+/* Menü öğesi üzerine gelindiğinde renk değişimi */
+.nav-link:hover {
+    color: #16639d !important;
+    /* Hover durumunda bağlantı rengini değiştir */
+}
+
+/* Pop-up kapalı iken gizli hale getir */
+
+
+
+.content {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up {
+    position: relative;
+    display: inline-block;
+}
+
+.popcontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.popcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.popcontent a:hover {
+    background-color: #f1f1f1
+}
+
+.popcontent:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
