@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            color: #146A99;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .text_area {
+            width: 70%;
+        }
+        .text_area h1 {
+            font-size: x-large;
+            font-style: bold;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text_area p {
+            font-size: medium;
+            padding: 1em;
+            line-height: 1.2em;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 0.03em;
+            color: rgb(30, 30, 30)
+        }
+        .photo_area {
+            width: 30%;
+            
+        }
+        .photo_area .flex-container h2 {
+            font-size: medium;
+            padding-left: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .photo_area .flex-container a {
+            text-align: left;
+            text-decoration: none;
+            padding-left: 1em;
+            padding-bottom: 0.5em;
+            color: #146a99;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .photo_area .flex-container a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            width: 100%;
+            margin: 0%;
+        }
+        .photo_area img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 0.15em;
+        }
+        #jump_link_bar {
+            background-color: #CDCDCB;
+            border-radius: 2%;
+        }
+        .img_wrapper {
+            border-style: solid;
+            border-width: 3px;
+            border-top-width: 0.7em;
+            border-radius: 2%;
+            border-color: #CDCDCB;
+            background-color: #CDCDCB;
+            color:rgb(30, 30, 30);
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 1em;
+            padding: 0.1em;
+        }
+
+        .footer_stripes_with_color_palette {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 6 equal columns for the color palette*/
+            width: auto;
+            /* Ensure the div spans the entire width of the screen */
+        }
+
+        .footer_stripes_with_color_palette span {
+            display: block;
+            height: 10px;
+            /*border-bottom: 1px solid #111111;*/
+        }
+
+        .footer_columns {
+            height: 85vh;
+            display: grid;
+            grid-template-columns:repeat(4, 1fr);
+        }
+
+        .footer_columns div {
+            flex: row;
+            /*border: 1px solid #604363;*/
+            text-align: left;
+            background-color: white;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .footer_columns div h1 {
+            width: auto;
+            text-align: left;
+            color: #146A99;
+            font-size: large;
+            position: relative;
+            margin-bottom: 10%;
+        }
+
+        .footer_columns div a {
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            margin-bottom: 10%;
+        }
+
+        .footer_columns div a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 15%;
+            height: 15%;
+            float: left;
+        }
+
+        .footer_bottom_logos {
+            display: flex;
+            justify-content: flex-end
+        }
+
+        .footer_bottom_logos img {
+            width: auto;
+            height: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-right: black solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="width: 100%; margin: 0%;" >
+        <iframe src="WebsiTemplate/WebsiTemplate/Temp1/Home.html" width="100%"
+        style="margin: 0%;"></iframe>
+    </header>
+
+    <div class="flex-container">
+        <div class="text_area">
+            <h1 id="genel_bilgiler">
+                &nbsp;&nbsp;&nbsp;&nbsp;Genel Bilgiler
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE (Açılımı: Institute of Electrical and Electronics Engineers), elektrik, elektronik, bilgisayar ve otomasyon gibi mühendislik alanlarının gelişimine katkı sağlayan, kâr amacı gütmeyen uluslararası bir teknik organizasyondur. 1884 yılında, Alexander Graham Bell ve Thomas Edison gibi öncü bilim insanları tarafından kurulmuştur.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Aralık 2021 itibarıyla, 160 ülkede 409.000'den fazla üyesi (125.000'den fazlası öğrenci) ve 39 teknik komitesi ile 3.565'ten fazla öğrenci kolu bulunmaktadır. Dünyada elektrik ve elektronik mühendisliği, bilgisayar ve otomasyon konularında yayınlanan makalelerin %30'unu IEEE yayınlamaktadır. Ayrıca, IEEE Xplore kütüphanesinde yaklaşık 5 milyon belge ve 200 düzenli bilimsel yayın ile 1.800'den fazla konferans yer almaktadır. Türkiye'nin de dahil olduğu 8. Bölge'de ise 26.000 üyesi, bunlardan 5.000'i öğrenci üyedir.
+            </p>
+            <h1 id="ieee_nasıl_kuruldu">
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE Nasıl Kuruldu?
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE, 1884 yılında Amerikan Elektrik Mühendisleri Enstitüsü (AIEE) olarak kuruldu ve 1912'de Radyo Mühendisleri Enstitüsü (IRE) ile rekabet etmeye başladı. 1963 yılında AIEE ve IRE'nin birleşmesiyle IEEE (Institute of Electrical and Electronics Engineers) olarak yeniden yapılandırıldı. 
+            </p>
+            <h1 id="buyume_ve_kuresellesme">
+                &nbsp;&nbsp;&nbsp;&nbsp;Büyüme ve Küreselleşme
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE, kuruluşundan itibaren mühendislik ve teknoloji alanlarında küresel bir etkiye sahip olmayı hedeflemiş ve bu doğrultuda hızla büyümüştür. 20. yüzyılın ortalarında AIEE ve IRE'nin birleşmesiyle tek çatı altında toplandıktan sonra, IEEE dünya çapında elektrik, elektronik, bilgisayar ve otomasyon gibi alanlarda lider bir kuruluş haline geldi. Teknolojinin her alanda hızla gelişmesiyle birlikte IEEE, 190’dan fazla ülkede 460.000'den fazla üyeye ulaşarak dünyanın dört bir yanındaki mühendisler, akademisyenler ve öğrenciler için bir ağ oluşturdu.
+                </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;IEEE Xplore dijital kütüphanesi, sayısız bilimsel yayınıyla araştırmacılara bilgi sağlarken, düzenlediği uluslararası konferanslar ve teknik komiteler aracılığıyla dünya genelindeki teknolojik gelişmelere öncülük etmektedir.
+            </p>
+            <h1 id="turkiyede_ieee">
+                &nbsp;&nbsp;&nbsp;&nbsp;Türkiye'de IEEE
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                IEEE, Türkiye’de mühendislik ve teknoloji alanındaki profesyoneller ve öğrenciler için önemli bir bilgi ve iş birliği kaynağı haline gelmiştir. 2023 itibarıyla Türkiye'de 5.000’i öğrenci olmak üzere toplam 26.000’den fazla IEEE üyesi bulunmaktadır. Türkiye, IEEE'nin Avrupa, Orta Doğu ve Afrika'yı kapsayan 8. Bölgesi'nde yer almakta ve ülkede aktif olarak çalışan 50’den fazla öğrenci kolu bulunmaktadır.
+            </p>
+            <h1 id="ikcude_ieee">
+                &nbsp;&nbsp;&nbsp;&nbsp;İKÇÜ'de IEEE
+            </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                İKÇÜ'de IEEE 20XX yılından beri aktiflik sağlamaktadır. Detaylı bilgi için <a href="/ikcudeieee">İKÇÜ'de IEEE</a> sayfamızı ziyaret edebilirsiniz.
+            </p>
+        </div>
+        <div class="photo_area">
+            <!-- Jump Link Bar -->
+            <div class="flex-container" style="flex-direction: column; margin-bottom: 1em;" id="jump_link_bar">
+                <h2 style="color:#146A99">
+                    Bu Sayfada:
+                </h2>
+                <a href="#genel_bilgiler">> Genel Bilgiler</a>
+                <a href="#ieee_nasıl_kuruldu">> IEEE Nasıl Kuruldu?</a>
+                <a href="#buyume_ve_kuresellesme">> Büyüme ve Küreselleşme</a>
+                <a href="#turkiyede_ieee">> Türkiye’de IEEE</a>
+                <a href="#ikcude_ieee">> İKÇÜ'de IEEE</a>
+            </div>
+            <div class="img_wrapper">
+                <img src="sunrise-7674594_1280.webp">
+                IEEE, yenilenebilir enerji sistemlerinin elektrik şebekelerine entegrasyonu için küresel standartlar geliştirerek çevreye katkı sağlamaktadır.
+            </div>
+            
+            <div class="img_wrapper">
+                <img src="image.png">
+                IEEE’nin 2023 verilerine göre, dünya genelinde 190’dan fazla ülkede, 460.000'den fazla üyesi bulunmaktadır.
+            </div>
+            
+            <div class="img_wrapper">
+                <img src="electric-4198293_1280.jpg">
+                IEEE ilk olarak elektrik mühendisliği alanında ortaya çıksa da, 1963'te yeni alanları da kapsayacak şekilde genişleyerek günümüzdeki çok disiplinli yapısını kazanmıştır.
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_stripes_with_color_palette">
+            <span style="background-color: #AB1C2C;"></span>
+            <span style="background-color: #604363;"></span>
+            <span style="background-color: #146A99;"></span>
+            <span style="background-color: #719CB2;"></span>
+            <span style="background-color: #CDCDCB;"></span>
+            <span style="background-color: #AE7CB3;"></span>
+        </div>
+
+        <div class="footer_columns">
+            <div>
+                <h1>
+                    Hakkımızda
+                </h1>
+                <a href="/about">
+                    IEEE Tarihçesi
+                </a>
+                <a href="/history">
+                    İKÇÜ'de IEEE
+                </a>
+                <a href="/history">
+                    Yönetim Kurulu
+                </a>
+                <a href="/sponsors">
+                    Sponsorlarımız
+                </a>
+            </div>
+            <div>
+                <h1>
+                    Komitelerimiz
+                </h1>
+                <a href="/comsoc">
+                    Communications Society
+                </a>
+                <a href="/ras">
+                    Robotics & Automation Society
+                </a>
+                <a href="/pes">
+                    Power & Energy Society
+                </a>
+                <a href="/embs">
+                    Engineering in Medicine & Biology Society
+                </a>
+                <a href="/wie">
+                    Women in Engineering
+                </a>
+                <a href="/ttk">
+                    Tanıtım & Tasarım Komitesi
+                </a>
+            </div>
+            <div>
+                <h1>
+                    Sosyal Medyada IEEE
+                </h1>
+                <div>
+                    <img src="linked_in.webp">
+                    <a href="linkedinlink">
+                        &nbsp;LinkedIn
+                    </a>
+                </div>
+                <div>
+                    <img src="social_media_logo_github-128.webp">
+                    <a href="/githublink">
+                        &nbsp;Github
+                    </a>
+                </div>
+                <div>
+                    <img src="instagram_online_social_media_photo-128.webp">
+                    <a href="/instalink">
+                        &nbsp;Instagram
+                    </a>
+                </div>
+                <div>
+                    <img src="twitter_online_social_media-128.webp">
+                    <a href="/xlink">
+                        &nbsp;X
+                    </a>
+                </div>    
+            </div>
+            <div>
+                <h1>
+                    Sorularınız, Önerileriniz İçin:
+                </h1>
+                <div>
+                    <img src="whatsapp.png"
+                    style="
+                        height: 40%;
+                        width: 40%;
+                        float: none;
+                        margin-left: 25%;
+                    ">
+                    <a href="/whatsappcommunitylink" style="font-size: large">
+                        Whatsapp gruplarımıza katılın
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom_logos">
+            <img src="ikclogo_yuarlak_beyaz.png" alt="ikcu logo">
+            <img src="ieee-logo.png" alt="ieee logo"
+            style="border-right: none;">
+        </div>
+    </footer>
+</body>
+</html>
