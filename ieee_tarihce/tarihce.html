@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="icon" type="image/png" href="WebsiTemplate/WebsiTemplate/Temp1/Home.cssimages/IEEELOGO.png"> -->
     <style>
         header {
             color: #146A99;
         }
         .flex-container {
+            padding-top: 115px;
             display: flex;
             flex-direction: row;
         }
@@ -147,13 +149,27 @@
             border-right: black solid 1px;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // HTML içeriğini yükle
+            fetch("WebsiTemplate/WebsiTemplate/Temp1/Home.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector("header").innerHTML = html;
+
+                    // CSS dosyasını dinamik olarak dahil et
+                    const cssLink = document.createElement("link");
+                    cssLink.rel = "stylesheet";
+                    cssLink.href = "WebsiTemplate/WebsiTemplate/Temp1/Home.css"; // CSS dosyanızın yolu
+                    document.head.appendChild(cssLink);
+                })
+                .catch(error => console.error("HTML yüklenirken hata oluştu:", error));
+        });
+    </script>
 </head>
 
 <body>
-    <header style="width: 100%; margin: 0%;" >
-        <iframe src="WebsiTemplate/WebsiTemplate/Temp1/Home.html" width="100%"
-        style="margin: 0%;"></iframe>
-    </header>
+    <header  style="width: 100%; margin: 0%;" id="header"></header>
 
     <div class="flex-container">
         <div class="text_area">

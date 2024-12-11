@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400&display=swap" rel="stylesheet">
     <style>
         /* Dropdown button style */
         .dropbtn {
@@ -36,7 +39,7 @@
         }
 
         .dropdown-content a {
-            color: black;
+            color: #333;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -53,6 +56,10 @@
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
+
+        #navbarSupportedContent {
+            font-family: 'Yantramanav';
+        }
     </style>
 </head>
 
@@ -60,7 +67,7 @@
     <header>
         <!-- Navigasyon çubuğu -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0"
-            style="background: #cbdce9; padding: 18px 25px;">
+            style="background: white; padding: 18px 25px;">
             <div class="container" style="margin: -25px auto; padding-bottom: 0;">
                 <!-- Logo konumlandırma -->
                 <div class="position-logo">
@@ -69,13 +76,15 @@
                 </div>
 
                 <!-- Menü düğmesi (mobil görünüm için) -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
 
                 <!-- Menü öğeleri -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                    style="justify-content: flex-end; Font-family: yantramanav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#!">Anasayfa</a>
@@ -87,11 +96,18 @@
                                 <a href="#">Vizyon ve Misyon</a>
                                 <a href="#">Tarihçe</a>
                                 <a href="#">IKCU IEEE</a>
-                                <a href="#">Kurullar</a>
+                                <a href="#">Yönetim ve İdari Kurul</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link" href="#!">Komiteler</a>
+                            <div class="dropdown-content">
+                                <a href="#">ComSoc</a>
+                                <a href="#">EMBS</a>
+                                <a href="#">CS</a>
+                                <a href="#">RAS</a>
+                                <a href="#">WIE</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#!">Etkinlikler</a>
