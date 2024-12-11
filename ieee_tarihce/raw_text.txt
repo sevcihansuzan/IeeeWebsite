@@ -1,0 +1,13 @@
+bu sayfada:
+    Genel bilgiler
+    IEEE Nasıl Kuruldu?
+    Büyüme ve Küreselleşme
+    Türkiye'de IEEE
+    İKÇÜ'de IEEE
+
+Genel bilgiler: 
+IEEE (Açılımı: Institute of Electrical and Electronics Engineers), elektrik, elektronik, bilgisayar ve otomasyon gibi mühendislik alanlarının gelişimine katkı sağlayan, kâr amacı gütmeyen uluslararası bir teknik organizasyondur. 1884 yılında, Alexander Graham Bell ve Thomas Edison gibi öncü bilim insanları tarafından kurulmuştur.
+Aralık 2021 itibarıyla, 160 ülkede 409.000'den fazla üyesi (125.000'den fazlası öğrenci) ve 39 teknik komitesi ile 3.565'ten fazla öğrenci kolu bulunmaktadır. Dünyada elektrik ve elektronik mühendisliği, bilgisayar ve otomasyon konularında yayınlanan makalelerin %30'unu IEEE yayınlamaktadır. Ayrıca, IEEE Xplore kütüphanesinde yaklaşık 5 milyon belge ve 200 düzenli bilimsel yayın ile 1.800'den fazla konferans yer almaktadır. Türkiye'nin de dahil olduğu 8. Bölge'de ise 26.000 üyesi, bunlardan 5.000'i öğrenci üyedir.
+
+IEEE Nasıl Kuruldu?:
+IEEE, 1884 yılında Amerikan Elektrik Mühendisleri Enstitüsü (AIEE) olarak kuruldu ve 1912'de Radyo Mühendisleri Enstitüsü (IRE) ile rekabet etmeye başladı. 1963 yılında AIEE ve IRE'nin birleşmesiyle IEEE (Institute of Electrical and Electronics Engineers) olarak yeniden yapılandırıldı. 
