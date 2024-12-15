@@ -1,0 +1,170 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Genel Konteyner */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Başlıklar */
+h2 {
+    color: #333; 
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Paragraflar */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Logo Konteyner */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.committee-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.committee-logo:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Misyon & Vizyon Bölümü */
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #FFFFFF; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.mission, .vision {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.mission-vision-photo {
+    width: 75%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* IEEE Tanıtımı */
+#ieee-tanitimi {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ieee-tanitimi h2 {
+    color: #333; 
+}
+
+/* İKÇÜ IEEE Bölümü */
+#ikcu-ieee {
+    background-color: #FAFAFA; 
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ikcu-ieee h2 {
+    color: #333;
+}
+
+/* Link Stil Ayarları */
+a {
+    color: #146A99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buton Stilleri */
+button {
+    background-color: #146A99;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #AB1C2C;
+}
+
+/* Alt Bilgi */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .mission-vision-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mission, .vision {
+        max-width: 100%;
+    }
+
+    .committee-logo {
+        width: 120px;
+    }
+}
